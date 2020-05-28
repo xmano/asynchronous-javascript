@@ -2,7 +2,8 @@ async function getIngredientRevised(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-(async () => {
+export async function sumTwoNumbers() {
+    console.clear();
     const ingredient1 = await getIngredientRevised(5);
     const ingredient2 = await getIngredientRevised(10);
 
@@ -11,4 +12,4 @@ async function getIngredientRevised(max) {
     console.log('First ingredient: ' + ingredient1);
     console.log('Second ingredient: ' + ingredient2);
     console.log('Sum: ' + sum);
-})();
+}
